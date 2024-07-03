@@ -1,8 +1,8 @@
 // Mongoose is like a bridge between nodejs server and mongodb server//
 const mongoose = require("mongoose");
 require('dotenv').config()
-// const mongoURL = process.env.LOCAL_DB_URL;
-const mongoURL = process.env.DB_URL;
+const mongoURL = process.env.LOCAL_DB_URL;
+// const mongoURL = process.env.DB_URL;
 
 mongoose.connect(mongoURL)
 .then(()=>{
